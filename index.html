@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weilai Wang's career journey, experience, and education.">
+  <title>Career Journey · Weilai Wang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-shell header-inner">
+      <a class="brand" href="https://miku-wwl.github.io/" aria-label="Back to Weilai Wang's main hub"><span>~/miku-wwl</span> / career-journey</a>
+      <div class="header-actions">
+        <a class="back-link" href="https://miku-wwl.github.io/">← Back to Main Hub</a>
+        <a class="repo-link" href="https://github.com/miku-wwl/career-journey" target="_blank" rel="noreferrer">repo ↗</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme" aria-pressed="false">◐ theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">~/career-journey $ git log --oneline</p>
+        <h1>Career Journey</h1>
+        <p class="lede">A map of the roles, systems, and learning paths that shaped my work as a backend and cloud-native software engineer.</p>
+      </div>
+      <aside class="signal-board" aria-label="Career journey status">
+        <div class="signal-row"><span>route</span><strong>/career-journey/</strong></div>
+        <div class="signal-row"><span>signal</span><strong class="live" data-live-status>online</strong></div>
+        <div class="signal-row"><span>focus</span><strong>reliability</strong></div>
+      </aside>
+    </section>
+
+    <section class="window" aria-labelledby="experience-title">
+      <div class="window-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span>experience.timeline</span></div>
+      <div class="window-body">
+        <div class="section-heading">
+          <div><p class="eyebrow">/timeline</p><h2 id="experience-title">Experience nodes</h2></div>
+          <p>Backend systems · distributed services · production troubleshooting</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="card-head">
+                <div><h3>Software Engineer <span class="company">@ Huawei Technologies Co., Ltd.</span></h3><p class="meta">Cluster Computing Network Development Department</p></div>
+                <p class="meta">Dec 2021 → Dec 2025</p>
+              </div>
+              <ul>
+                <li>Designed and implemented backend services for cluster network management systems covering configuration, monitoring, traffic shaping, congestion scheduling, host security, and device port management.</li>
+                <li>Built and maintained Spring Boot microservices deployed on Kubernetes with scalable delivery and consistent deployment workflows.</li>
+                <li>Defined cross-service communication interfaces using Thrift IDL and synchronized operational data between distributed services and in-memory data stores.</li>
+                <li>Investigated defects and reliability issues using static code scanning, debugging tools, logs, distributed tracing, packet analysis, and production-oriented troubleshooting.</li>
+                <li>Participated in Agile delivery, requirement analysis, code reviews, technical documentation, sprint planning, and cross-team collaboration with CLI and Linux SDK teams.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="card-head">
+                <div><h3>Java Software Engineer Intern <span class="company">@ OKX</span></h3><p class="meta">Core matching system team</p></div>
+                <p class="meta">Jul 2021 → Oct 2021</p>
+              </div>
+              <ul>
+                <li>Worked with event-driven architecture, high-performance backend systems, and reliability-sensitive trading infrastructure.</li>
+                <li>Used Aeron Archive concepts for message storage and replay in auditing, fault detection, and market data distribution scenarios.</li>
+                <li>Built practical experience in Java backend development, Maven builds, Spring Cloud concepts, distributed service debugging, and performance-oriented testing.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" style="margin-top: 1rem" aria-labelledby="education-title">
+      <div class="window-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span>education/degrees.txt</span></div>
+      <div class="window-body">
+        <p class="eyebrow">~/education $ cat degrees.txt</p>
+        <h2 id="education-title">Learning checkpoints</h2>
+        <ul class="education">
+          <li>Yoobee College of Creative Innovation — Master of Software Engineering, expected Apr 2027</li>
+          <li>University of Technology Sydney — Master of Engineering: Software Systems Engineering, 2020–2021</li>
+          <li>University of Technology Sydney — Bachelor of Science (Honours) in Information Technology: First Class Honours, 2019–2020</li>
+          <li>Nanjing University of Aeronautics and Astronautics — Bachelor's Degree: Software Engineering, 2016–2020</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="site-shell footer-inner"><p>❯ echo "career journey loaded"</p><p>Independent GitHub Pages module · <a href="https://github.com/miku-wwl/career-journey">source</a></p></div></footer>
+  <script src="./site.js"></script>
+</body>
+</html>
