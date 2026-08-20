@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./site.css">
+  <link rel="stylesheet" href="./page.css">
 </head>
 <body>
   <header class="site-header">
@@ -22,78 +23,38 @@
     </div>
   </header>
 
-  <main class="site-shell">
-    <section class="hero">
-      <div>
-        <p class="eyebrow">~/career-journey $ git log --oneline</p>
-        <h1>Career Journey</h1>
-        <p class="lede">A map of the roles, systems, and learning paths that shaped my work as a backend and cloud-native software engineer.</p>
-      </div>
-      <aside class="signal-board" aria-label="Career journey status">
-        <div class="signal-row"><span>route</span><strong>/career-journey/</strong></div>
-        <div class="signal-row"><span>signal</span><strong class="live" data-live-status>online</strong></div>
-        <div class="signal-row"><span>focus</span><strong>reliability</strong></div>
-      </aside>
+  <main class="site-shell page-main">
+    <section class="hero career-hero">
+      <div class="hero-copy"><p class="eyebrow">~/career-journey $ git log --oneline</p><h1>Career Journey</h1><p class="lede">A map of roles, systems, and learning paths that shaped my work as a backend and cloud-native software engineer.</p><div class="hero-subline"><span class="chip green"><span class="chip-dot"></span>backend systems</span><span class="chip cyan">distributed services</span><span class="chip violet">reliability</span></div></div>
+      <div class="career-visual"><div class="scene-frame"><canvas class="three-scene" data-three-scene="career" aria-hidden="true"></canvas><span class="scene-fallback" aria-hidden="true">3D scene unavailable · timeline still online</span></div><span class="scene-label systems">SYSTEMS / 2021—2025</span><span class="scene-label reliability">RELIABILITY NODE</span><span class="scene-label innovation">LEARNING VECTOR</span></div>
+      <aside class="hud-panel" aria-label="Career journey status"><p class="hud-title">// CAREER HUD</p><div class="hud-row"><span>route</span><strong>/career-journey/</strong></div><div class="hud-row"><span>signal</span><strong class="live"><span class="status-dot" aria-hidden="true"></span> ONLINE</strong></div><div class="hud-row"><span>nodes</span><strong class="cyan">02 roles</strong></div><div class="hud-row"><span>focus</span><strong>reliability</strong></div><div class="hud-time mono"><span>local time</span><strong data-live-time>--:--:--</strong></div></aside>
     </section>
 
-    <section class="window" aria-labelledby="experience-title">
-      <div class="window-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span>experience.timeline</span></div>
+    <section class="window career-window" aria-labelledby="experience-title">
+      <div class="window-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span>experience.timeline</span><span class="window-state">LIVE RECORD</span></div>
       <div class="window-body">
-        <div class="section-heading">
-          <div><p class="eyebrow">/timeline</p><h2 id="experience-title">Experience nodes</h2></div>
-          <p>Backend systems · distributed services · production troubleshooting</p>
-        </div>
+        <div class="section-heading"><div><p class="eyebrow">/timeline</p><h2 id="experience-title">Experience nodes</h2></div><p>backend systems · production troubleshooting</p></div>
         <div class="timeline">
           <article class="timeline-item">
             <span class="timeline-dot" aria-hidden="true"></span>
-            <div class="timeline-card">
-              <div class="card-head">
-                <div><h3>Software Engineer <span class="company">@ Huawei Technologies Co., Ltd.</span></h3><p class="meta">Cluster Computing Network Development Department</p></div>
-                <p class="meta">Dec 2021 → Dec 2025</p>
-              </div>
-              <ul>
-                <li>Designed and implemented backend services for cluster network management systems covering configuration, monitoring, traffic shaping, congestion scheduling, host security, and device port management.</li>
-                <li>Built and maintained Spring Boot microservices deployed on Kubernetes with scalable delivery and consistent deployment workflows.</li>
-                <li>Defined cross-service communication interfaces using Thrift IDL and synchronized operational data between distributed services and in-memory data stores.</li>
-                <li>Investigated defects and reliability issues using static code scanning, debugging tools, logs, distributed tracing, packet analysis, and production-oriented troubleshooting.</li>
-                <li>Participated in Agile delivery, requirement analysis, code reviews, technical documentation, sprint planning, and cross-team collaboration with CLI and Linux SDK teams.</li>
-              </ul>
-            </div>
+            <div class="timeline-card green-node"><div class="card-head"><div><h3>Software Engineer <span class="company">@ Huawei Technologies Co., Ltd.</span></h3><p class="meta">Cluster Computing Network Development Department</p></div><p class="meta timeline-time">Dec 2021 → Dec 2025</p></div><ul><li>Designed and implemented backend services for cluster network management systems covering configuration, monitoring, traffic shaping, congestion scheduling, host security, and device port management.</li><li>Built and maintained Spring Boot microservices deployed on Kubernetes with scalable delivery and consistent deployment workflows.</li><li>Defined cross-service communication interfaces using Thrift IDL and synchronized operational data between distributed services and in-memory data stores.</li><li>Investigated defects and reliability issues using static code scanning, debugging tools, logs, distributed tracing, packet analysis, and production-oriented troubleshooting.</li><li>Participated in Agile delivery, requirement analysis, code reviews, technical documentation, sprint planning, and cross-team collaboration with CLI and Linux SDK teams.</li></ul><div class="tag-list"><span class="tag green">Spring Boot</span><span class="tag green">Kubernetes</span><span class="tag cyan">Thrift</span><span class="tag cyan">Linux</span></div></div>
           </article>
           <article class="timeline-item">
             <span class="timeline-dot" aria-hidden="true"></span>
-            <div class="timeline-card">
-              <div class="card-head">
-                <div><h3>Java Software Engineer Intern <span class="company">@ OKX</span></h3><p class="meta">Core matching system team</p></div>
-                <p class="meta">Jul 2021 → Oct 2021</p>
-              </div>
-              <ul>
-                <li>Worked with event-driven architecture, high-performance backend systems, and reliability-sensitive trading infrastructure.</li>
-                <li>Used Aeron Archive concepts for message storage and replay in auditing, fault detection, and market data distribution scenarios.</li>
-                <li>Built practical experience in Java backend development, Maven builds, Spring Cloud concepts, distributed service debugging, and performance-oriented testing.</li>
-              </ul>
-            </div>
+            <div class="timeline-card cyan-node"><div class="card-head"><div><h3>Java Software Engineer Intern <span class="company">@ OKX</span></h3><p class="meta">Core matching system team</p></div><p class="meta timeline-time">Jul 2021 → Oct 2021</p></div><ul><li>Worked with event-driven architecture, high-performance backend systems, and reliability-sensitive trading infrastructure.</li><li>Used Aeron Archive concepts for message storage and replay in auditing, fault detection, and market data distribution scenarios.</li><li>Built practical experience in Java backend development, Maven builds, Spring Cloud concepts, distributed service debugging, and performance-oriented testing.</li></ul><div class="tag-list"><span class="tag cyan">Java</span><span class="tag cyan">Aeron</span><span class="tag violet">event-driven</span></div></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="window" style="margin-top: 1rem" aria-labelledby="education-title">
+    <section class="window education-window" aria-labelledby="education-title">
       <div class="window-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span>education/degrees.txt</span></div>
-      <div class="window-body">
-        <p class="eyebrow">~/education $ cat degrees.txt</p>
-        <h2 id="education-title">Learning checkpoints</h2>
-        <ul class="education">
-          <li>Yoobee College of Creative Innovation — Master of Software Engineering, expected Apr 2027</li>
-          <li>University of Technology Sydney — Master of Engineering: Software Systems Engineering, 2020–2021</li>
-          <li>University of Technology Sydney — Bachelor of Science (Honours) in Information Technology: First Class Honours, 2019–2020</li>
-          <li>Nanjing University of Aeronautics and Astronautics — Bachelor's Degree: Software Engineering, 2016–2020</li>
-        </ul>
-      </div>
+      <div class="window-body"><div class="section-heading"><div><p class="eyebrow">~/education $ cat degrees.txt</p><h2 id="education-title">Learning checkpoints</h2></div><p>education as an active system</p></div><ul class="education"><li><span class="education-mark">◉</span><span>Yoobee College of Creative Innovation — Master of Software Engineering</span><span class="education-time">expected Apr 2027</span></li><li><span class="education-mark">◉</span><span>University of Technology Sydney — Master of Engineering: Software Systems Engineering</span><span class="education-time">2020–2021</span></li><li><span class="education-mark">◉</span><span>University of Technology Sydney — Bachelor of Science (Honours) in Information Technology: First Class Honours</span><span class="education-time">2019–2020</span></li><li><span class="education-mark">◉</span><span>Nanjing University of Aeronautics and Astronautics — Bachelor's Degree: Software Engineering</span><span class="education-time">2016–2020</span></li></ul></div>
     </section>
   </main>
 
   <footer class="site-footer"><div class="site-shell footer-inner"><p>❯ echo "career journey loaded"</p><p>Independent GitHub Pages module · <a href="https://github.com/miku-wwl/career-journey">source</a></p></div></footer>
   <script src="./site.js"></script>
+  <script type="module" src="./scene.js"></script>
 </body>
 </html>
