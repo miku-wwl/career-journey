@@ -1,5 +1,6 @@
 .page-main { padding-top: 1.4rem; }
 .career-hero { margin-bottom: 1.4rem; }
+.career-hero .hero-copy h1 { white-space: nowrap; font-size: clamp(2rem, 2.6vw, 2.75rem); letter-spacing: -0.06em; }
 .career-visual { position: relative; height: 330px; min-height: 330px; }
 .career-visual .scene-frame { height: 330px; min-height: 330px; }
 .career-visual .scene-label { position: absolute; z-index: 4; color: var(--cyan); font: 0.58rem var(--mono); letter-spacing: 0.08em; pointer-events: none; }
