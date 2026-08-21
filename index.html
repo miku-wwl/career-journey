@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./page.css">
 </head>
 <body>
+  <div class="page-scene-background" aria-hidden="true"></div>
   <header class="site-header">
     <div class="site-shell header-inner">
       <a class="brand" href="https://miku-wwl.github.io/" aria-label="Back to Weilai Wang's main hub"><span>~/miku-wwl</span> / career-journey</a>
@@ -26,7 +27,7 @@
   <main class="site-shell page-main">
     <section class="hero career-hero">
       <div class="hero-copy"><p class="eyebrow">~/career-journey $ git log --oneline</p><h1>Career Journey</h1><p class="lede">A map of roles, systems, and learning paths that shaped my work as a backend and cloud-native software engineer.</p><div class="hero-subline"><span class="chip green"><span class="chip-dot"></span>backend systems</span><span class="chip cyan">distributed services</span><span class="chip violet">reliability</span></div></div>
-      <div class="career-visual"><div class="scene-frame"><canvas class="three-scene" data-three-scene="career" aria-hidden="true"></canvas><span class="scene-fallback" aria-hidden="true">3D scene unavailable · timeline still online</span></div><span class="scene-label systems">SYSTEMS / 2021—2025</span><span class="scene-label reliability">RELIABILITY NODE</span><span class="scene-label innovation">LEARNING VECTOR</span></div>
+      <div class="career-visual"><div class="scene-frame"></div><span class="scene-label systems">SYSTEMS / 2021—2025</span><span class="scene-label reliability">RELIABILITY NODE</span><span class="scene-label innovation">LEARNING VECTOR</span></div>
       <aside class="hud-panel" aria-label="Career journey status"><p class="hud-title">// CAREER HUD</p><div class="hud-row"><span>route</span><strong>/career-journey/</strong></div><div class="hud-row"><span>signal</span><strong class="live"><span class="status-dot" aria-hidden="true"></span> ONLINE</strong></div><div class="hud-row"><span>nodes</span><strong class="cyan">02 roles</strong></div><div class="hud-row"><span>focus</span><strong>reliability</strong></div><div class="hud-time mono"><span>local time</span><strong data-live-time>--:--:--</strong></div></aside>
     </section>
 
@@ -55,6 +56,5 @@
 
   <footer class="site-footer"><div class="site-shell footer-inner"><p>❯ echo "career journey loaded"</p><p>Independent GitHub Pages module · <a href="https://github.com/miku-wwl/career-journey">source</a></p></div></footer>
   <script src="./site.js"></script>
-  <script type="module" src="./scene.js"></script>
 </body>
 </html>
